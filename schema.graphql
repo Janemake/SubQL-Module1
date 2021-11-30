@@ -3,3 +3,8 @@ type Account @entity {
   account: String #This is a Polkadot address
   balance: BigInt # This is the amount of DOT 
 }
+
+type SumBalance @entity{
+  id: ID! # AccountId
+  accountTotal: BigInt!
+ }
